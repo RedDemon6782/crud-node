@@ -7,7 +7,7 @@ route.post('/car', (req,res)=>{
  const car = req.body
  //adciona o carro no array do database
  database.push(car)
-//
+//retorna a resposta com status 201 e o carro
  return res.status(201).json(car)
 })
 

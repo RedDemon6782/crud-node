@@ -8,7 +8,7 @@ const app =express()
 app.use(express.json())
 
 app.use(routes.createCar)
-
+app.use(routes.listcar)
 app.listen(3000, ()=>{
     console.log('servidor inicializado')
 })
