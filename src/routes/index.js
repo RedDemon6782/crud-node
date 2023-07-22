@@ -1,5 +1,5 @@
-const createcar=require('./create-car.js')
+const createCar=require('./create-car.js')
 
 module.exports = {
-      createcar        
+      createCar        
 }

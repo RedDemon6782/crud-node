@@ -1,12 +1,13 @@
 const express = require('express')
 
+
+const routes  = require('./routes/index')
+
 const app =express()
 
 app.use(express.json())
 
-app.get('/',(req,res)=>{
-    return res.status(200).json('olá')
-})
+app.use(routes.createCar)
 
 app.listen(3000, ()=>{
     console.log('servidor inicializado')
